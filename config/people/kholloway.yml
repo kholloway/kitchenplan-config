@@ -11,10 +11,47 @@ recipes:
         - osxdefaults::avoid_creating_ds_store_files_on_network_volumes
         - osxdefaults::disable_auto-correct
         - osxdefaults::expand_save_panel_by_default
+        - osxdefaults::finder_new_finder_windows_shows_homefolder
+        - osxdefaults::finder_allow_text_selection_in_quick_look
+        - osxdefaults::enable_safari_debug_menu
+        - osxdefaults::mail_copy_email_addresses_instead_of_names_in_mail
+        - mac_os_x::settings
+        - mac_os_x::screensaver
+        - sudoalt::default
 attributes:
     osxdefaults:
-        finder:
-            preferred_view_style: Nlsv
+       finder:
+           preferred_view_style: Nlsv
+    mac_os_x:
+       settings:
+         domain:
+           FinderShowRemovableMediaOnDesktop:
+               domain: com.apple.finder
+               key: ShowRemovableMediaOnDesktop
+               value: true
+           FinderShowExternalHardDrivesOnDesktop:
+               domain: com.apple.finder
+               key: ShowExternalHardDrivesOnDesktop
+               value: true
+           FinderShowHardDrivesOnDesktop:
+               domain: com.apple.finder
+               key: ShowHardDrivesOnDesktop
+               value: false
+           FinderShowMountedServersOnDesktop:
+               domain: com.apple.finder
+               key: ShowMountedServersOnDesktop
+               value: false
+           DisableSmartQuotes:
+               domain: NSGlobalDomain
+               key: NSAutomaticQuoteSubstitutionEnabled
+               value: false
+
+    authorization:
+        sudo:
+            users:
+                - kholloway
+            passwordless: true
+            include_sudoers_d: true
     homebrewalt:
         apps:
             - git-extras
@@ -55,9 +92,3 @@ attributes:
             - macpass
             - licecap
             - chicken
-    authorization:
-        sudo:
-            users:
-                - kholloway
-            passwordless: true
-            include_sudoers_d: true

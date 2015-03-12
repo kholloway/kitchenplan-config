@@ -8,3 +8,4 @@ cookbook "dotfiles",              :github => "kitchenplan/chef-dotfiles",       
 cookbook "drivers",               :github => "kitchenplan/chef-drivers",        :ref => "v1.0"
 cookbook "sudoalt",               :github => "kitchenplan/chef-sudoalt",        :ref => "v2.4"
 cookbook "dmg",                   :github => "opscode-cookbooks/dmg",           :ref => "v2.1.4"
+cookbook "mac_os_x",              :github => "chef-osx/mac_os_x",               :ref => "1.4.6"
