@@ -1,11 +1,20 @@
-groups:
-    - groupa
 recipes:
     mac_os_x:
-        - osxdefaults::set_computer_name
+        - osxdefaults::disable_press-and-hold_for_keys_in_favor_of_key_repeat
+        - osxdefaults::enable_full_keyboard_access_for_all_controls
+        - osxdefaults::enable_standard_function_keys
+        - osxdefaults::disable_auto-correct
+        - osxdefaults::tap_to_click
+        - osxdefaults::set_a_blazingly_fast_keyboard_repeat_rate
+        - osxdefaults::dock_automatically_hide_and_show_the_dock
+        - osxdefaults::save_to_disk_not_to_iCloud_by_default
+        - osxdefaults::avoid_creating_ds_store_files_on_network_volumes
+        - osxdefaults::disable_auto-correct
+        - osxdefaults::expand_save_panel_by_default
 attributes:
     osxdefaults:
-        computername: MyComputerName
+        finder:
+            preferred_view_style: Nlsv
     homebrewalt:
         apps:
             - git-extras
@@ -36,7 +45,7 @@ attributes:
             - tig
         cask_apps:
             - sourcetree
-            - term2
+            - iterm2
             - mou
             - qlmarkdown
             - vagrant
