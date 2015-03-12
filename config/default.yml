@@ -8,44 +8,8 @@ attributes:
     homebrewalt:
         apps:
             - git
-            - icu4c
-            - coreutils
-            - libxml2
-            - keychain
-            - ctags
-            - boot2docker
-            - pstree
-            - postgresql
-            - gsasl
-            - the_silver_searcher
-            - curl
-            - wget
-            - iftop
-            - tree
-            - go
-            - htop-osx
-            - jq
-            - multimarkdown
-            - nmap
-            - mercurial
-            - tmux
-            - lynx
-            - reattach-to-user-namespace
-            - zsh
-            - tig
         cask_apps:
             - google-chrome
-            - term2
-            - mou
-            - qlmarkdown
-            - vagrant
-            - chefdk
-            - atom
-            - filebot
-            - macpass
-            - licecap
-            - sourcetree
-            - chicken
         cask_fonts:
             - inconsolata
     nodejs:

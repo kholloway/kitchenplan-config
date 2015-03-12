@@ -9,5 +9,46 @@ attributes:
     homebrewalt:
         apps:
             - git-extras
+            - icu4c
+            - coreutils
+            - libxml2
+            - keychain
+            - ctags
+            - boot2docker
+            - pstree
+            - postgresql
+            - gsasl
+            - the_silver_searcher
+            - curl
+            - wget
+            - iftop
+            - tree
+            - go
+            - htop-osx
+            - jq
+            - multimarkdown
+            - nmap
+            - mercurial
+            - tmux
+            - lynx
+            - reattach-to-user-namespace
+            - zsh
+            - tig
         cask_apps:
             - sourcetree
+            - term2
+            - mou
+            - qlmarkdown
+            - vagrant
+            - chefdk
+            - atom
+            - filebot
+            - macpass
+            - licecap
+            - chicken
+    authorization:
+        sudo:
+            users:
+                - kholloway
+            passwordless: true
+            include_sudoers_d: true
