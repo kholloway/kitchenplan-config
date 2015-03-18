@@ -1,5 +1,7 @@
 recipes:
     mac_os_x:
+        - ruby_build
+        - rbenv::system
         - osxdefaults::disable_press-and-hold_for_keys_in_favor_of_key_repeat
         - osxdefaults::enable_full_keyboard_access_for_all_controls
         - osxdefaults::enable_standard_function_keys
@@ -19,6 +21,9 @@ recipes:
         - mac_os_x::screensaver
         - sudoalt::default
 attributes:
+    rbenv:
+      rubies:
+      - name: 2.1.1
     osxdefaults:
        finder:
            preferred_view_style: Nlsv
